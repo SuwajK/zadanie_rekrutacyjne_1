@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shipping-cart">
+    <h1 class="shipping-cart__header">Shopping Cart</h1>
+    <button class="shipping-cart__header_button btn-action">Proceed to checkout</button>
+    <main class="shipping-cart__main">
+        <table class="shipping-cart__main__table">
+            <thead class="shipping-cart__main__table__header">
+            <tr class="shipping-cart__main__table__header__row">
+                <th></th>
+                <th></th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Qty</th>
+            </tr>
+            </thead>
+            <tbody class="shipping-cart__main__table__body">
+            <tr class="shipping-cart__main__table__body__item-row">
+                <td>
+                    <img src="images/x-img.png" alt="Delete item"/>
+                </td>
+                <td>
+                    <img src="images/headphones.png" alt="Headphones"/>
+                </td>
+                <td>Headphones</td>
+                <td>$11.90</td>
+                <td>
+                    <button class="btn-edit">-</button>
+                    <input type="text" class="shipping-cart__main__table__body__item-row__input"/>
+                    <button class="btn-edit">+</button>
+                    <img src="images/edit-img.png" alt="Edit"
+                         class="shipping-cart__main__table__body__item-row__image"/>
+                </td>
+            </tr>
+            <tr class="shipping-cart__main__table__last-row">
+                <td>
+                    <button class="btn-action btn-action--bold">Update Shopping Cart</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+    <aside class="shipping-cart__summary">
+        <p class="shipping-cart__summary__shipping">
+            <span class="shipping-cart__summary__shipping__label">SHIPPING</span>
+            <span class="shipping-cart__summary__shipping__value">$23.80</span>
+        </p>
+        <p class="shipping-cart__summary__costs">
+            <span class="shipping-cart__summary__costs__header">CART TOTALS</span>
+            <span class="shipping-cart__summary__costs__subtotal__label">Subtotal</span>
+            <span class="shipping-cart__summary__costs__subtotal__value">$23.80</span>
+            <span class="shipping-cart__summary__costs__grand-total__label">Grand Total</span>
+            <span class="shipping-cart__summary__costs__grand-total__value">$23.80</span>
+        <button class="shipping-cart__summary__costs__button btn-action btn-action--bold">Proceed to checkout</button>
+        </p>
+    </aside>
+
+</div>
+</body>
+</html>
